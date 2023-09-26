@@ -1,0 +1,127 @@
+.welcome {
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -2;
+		width: 100%;
+		height: 108%;
+		background-color: #C279FF;
+		clip-path: polygon( 0% 0%,100% 0%,100% 63.427%,100% 63.427%,99.958% 64.404%,99.837% 65.342%,99.642% 66.232%,99.377% 67.063%,99.049% 67.823%,98.661% 68.504%,98.22% 69.093%,97.731% 69.581%,97.199% 69.958%,96.628% 70.212%,4.962% 99.782%,4.962% 99.782%,4.198% 99.911%,3.458% 99.812%,2.756% 99.504%,2.104% 99.004%,1.516% 98.33%,1.006% 97.502%,0.586% 96.536%,0.269% 95.451%,0.069% 94.265%,0% 92.997%,0% 0% );
+		@media (max-width: $mbpMEnd) {
+			clip-path: polygon( 0% 0%,100% 0%,100% 69.403%,100% 69.403%,99.873% 70.961%,99.499% 72.47%,98.893% 73.916%,98.068% 75.285%,97.036% 76.561%,95.81% 77.732%,94.405% 78.782%,92.833% 79.698%,91.107% 80.464%,89.241% 81.067%,21.241% 99.257%,21.241% 99.257%,18.12% 99.835%,15.04% 99.926%,12.069% 99.568%,9.273% 98.797%,6.722% 97.65%,4.483% 96.166%,2.623% 94.381%,1.211% 92.332%,0.314% 90.056%,0% 87.592%,0% 0% );
+		}
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(170deg, #161616 0%, #260046 32.29%, #2A004E 57.29%, #500092 78.65%, #3A006A 100%, #2A004E 100%);
+		clip-path: polygon( 0% 0%,100% 0%,100% 66.103%,100% 66.103%,99.956% 67.19%,99.829% 68.233%,99.624% 69.218%,99.347% 70.135%,99.003% 70.97%,98.599% 71.712%,98.14% 72.35%,97.632% 72.869%,97.08% 73.26%,96.49% 73.509%,4.824% 99.863%,4.824% 99.863%,4.074% 99.957%,3.35% 99.815%,2.666% 99.456%,2.032% 98.899%,1.463% 98.163%,0.969% 97.267%,0.564% 96.229%,0.259% 95.069%,0.067% 93.805%,0% 92.457%,0% 0% );
+		@media (max-width: $mbpMEnd) {
+			clip-path: polygon( 0% 0%,100% 0%,100% 71.66%,100% 71.66%,99.857% 73.439%,99.437% 75.154%,98.758% 76.79%,97.836% 78.326%,96.688% 79.747%,95.329% 81.034%,93.777% 82.169%,92.047% 83.134%,90.157% 83.913%,88.123% 84.486%,20.123% 99.53%,20.123% 99.53%,17.091% 99.953%,14.129% 99.897%,11.297% 99.399%,8.651% 98.498%,6.252% 97.231%,4.158% 95.634%,2.427% 93.746%,1.118% 91.603%,0.289% 89.243%,0% 86.704%,0% 0% );
+		}
+	}
+	&__underlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+	&__container {
+		padding-top: 160px;
+		padding-bottom: 145px;
+		@media (min-width: $mbpSMStart) and (max-width: $mbpPCEnd) {
+			padding-top: aval(100, 160, 0, $mbpSMStartNu, $mbpPCEndNu);
+			padding-bottom: aval(75, 145, 0, $mbpSMStartNu, $mbpPCEndNu);
+		}
+		@media screen and (max-width: $mbpESMEnd) {
+			padding-top: 100px;
+			padding-bottom: 75px;
+		}
+		@media (max-width: $mbpSMEnd) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	&__title{
+		position: sticky;
+		left: 40px;
+		z-index: 1;
+		@media (max-width: $mbpSMEnd) {
+			position: static;
+			left: unset;
+		}
+	}
+}
+.page-title {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: #FFF;
+	font-family: Thunder;
+	font-size: 160px;
+	font-weight: 800;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	@media (min-width: $mbpSMStart) and (max-width: $mbpPCEnd) {
+		font-size: aval(70, 160, 0, $mbpSMStartNu, $mbpPCEndNu);
+	}
+	@media screen and (max-width: $mbpESMEnd) {
+		font-size: 70px;
+	}
+	@media screen and (max-width: 360px) {
+		font-size: 55px;
+	}
+	@media (max-width: $mbpSMEnd) {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	& > strong {
+		display: inline-block;
+		position: relative;
+		left: 0;
+		top: 0;
+		color: #161616;
+		margin-top: 19px;
+		margin-bottom: 19px;
+		z-index: 1;
+		@media (max-width: $mbpSPCEnd) {
+			margin-top: 21px;
+			margin-bottom: 21px;
+		}
+		@media (max-width: $mbpSMEnd) {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		&::before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			top: -8.75%;
+			left: -9%;
+			z-index: -1;
+			height: 112%;
+			width: 118%;
+			background-color: #9DF850;
+			clip-path: polygon( 4.182% 8.641%,4.182% 8.641%,4.285% 7.171%,4.431% 5.801%,4.615% 4.545%,4.835% 3.416%,5.087% 2.425%,5.367% 1.586%,5.671% 0.911%,5.995% 0.413%,6.337% 0.105%,6.692% 0%,97.416% 0%,97.416% 0%,97.898% 0.192%,98.347% 0.745%,98.757% 1.619%,99.12% 2.778%,99.429% 4.183%,99.677% 5.796%,99.858% 7.581%,99.965% 9.498%,99.99% 11.511%,99.926% 13.581%,95.818% 91.359%,95.818% 91.359%,95.715% 92.829%,95.569% 94.199%,95.385% 95.455%,95.165% 96.584%,94.913% 97.575%,94.633% 98.414%,94.329% 99.089%,94.005% 99.587%,93.663% 99.895%,93.308% 100%,2.583% 100%,2.583% 100%,2.102% 99.808%,1.653% 99.255%,1.243% 98.381%,0.88% 97.222%,0.571% 95.818%,0.323% 94.204%,0.142% 92.42%,0.035% 90.502%,0.01% 88.489%,0.074% 86.419%,4.182% 8.641% );
+		}
+	}
+	&:first-child {
+		margin-top: 0;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

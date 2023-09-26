@@ -1,0 +1,116 @@
+<section class="teams-review">
+	<div class="section-container teams-review__container">
+		<div class="teams-review__call">Choose the perfect team for your project:</div>
+	</div>
+	<div id="our-team" class="section-container teams-review__container">
+		<div class="teams-review__team-filter section-nav">
+			<div class="section-nav__container">
+				<div id="team-select-slider" class="section-nav__slider swiper">
+					<div id="department-select-wrapper" class="section-nav__wrapper swiper-wrapper">
+					</div>
+				</div>
+				<div class="swipe-area-pointer teams-review__swipe-area-pointer">
+					<svg class="swipe-area-pointer__icon" viewbox="0 0 28 28">
+						<use href='img/static/icons/icons.svg#swipe-area-pointer'></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section-container teams-review__container">
+		<div id="teamates-slider" class="teamates-slider teams-review__teamates-slider swiper">
+			<div id="teamates-list-wrapper" class="teamates-slider__wrapper swiper-wrapper">
+				<!-- <div class="teamate-card teamates-slider__slide swiper-slide" data-headless-slide>
+					<div class="teamate-card__img-wrap img-wrap">
+						<img src="@img/static/temates/viktoria-kabachenko.jpg" alt="viktoria-kabachenko.jpg" class="teamate-card__img">
+					</div>
+					<div class="teamate-card__header">
+						<div class="teamate-card__title">Head of Design Department</div>
+						<h3 class="teamate-card__name">Viktoria Kabachenko</h3>
+					</div>
+					<ul class="teamate-card__skills">
+						<li class="teamate-card__skill-item">
+							<img src="@img/static/skill-icons/research.svg" alt="research.svg" class="teamate-card__skill-icon">
+							<div class="teamate-card__skill-name">UX Research</div>
+						</li>
+						<li class="teamate-card__skill-item">
+							<img src="@img/static/skill-icons/desctop.svg" alt="desctop.svg" class="teamate-card__skill-icon">
+							<div class="teamate-card__skill-name">Web Design</div>
+						</li>
+						<li class="teamate-card__skill-item">
+							<img src="@img/static/skill-icons/mobile.svg" alt="mobile.svg" class="teamate-card__skill-icon">
+							<div class="teamate-card__skill-name">Mobile apps Design</div>
+						</li>
+						<li class="teamate-card__skill-item">
+							<img src="@img/static/skill-icons/vector-based-design.png" alt="vector-based-design.svg" class="teamate-card__skill-icon">
+							<div class="teamate-card__skill-name">Logotypes, Branding</div>
+						</li>
+					</ul>
+					<a href="./viktoria-kabachenko.html" class="text-btn teamate-card__btn">
+						<span class="text-btn__cap">View more</span>
+						<svg class="svg-icon" viewbox="0 0 18 16">
+							<use href='@img/static/icons/icons.svg#simple-arrow-right'></use>
+						</svg>
+					</a>
+				</div> -->
+				<div class="teamate-card-stub swiper-slide">
+				</div>
+				<div class="teamate-card-stub swiper-slide">
+				</div>
+				<div class="teamate-card-stub swiper-slide">
+				</div>
+				<div class="teamate-card-stub swiper-slide">
+				</div>
+				<div class="teamate-card-stub swiper-slide">
+				</div>
+			</div>
+			<div class="teamates-slider__bottom">
+				<div class="teamates-slider__bottom-inner">
+					<button id="teamates-slider-prev" type="button" class="swiper-btn swiper-btn_prev teamates-slider__btn-prev">
+						Previous CV
+						<svg class="svg-icon" viewbox="0 0 10 16">
+							<use href='@img/static/icons/icons.svg#90deg-arrow-left'></use>
+						</svg>
+					</button>
+					<!-- <div id="teamates-slider-pagination" class="teamates-slider__pagination"></div> -->
+					<div id="teamates-slider-counter" class="teamates-slider__counter">
+						<div class="teamates-slider__current">0</div>of<div class="teamates-slider__total">0</div>
+					</div>
+					<button id="teamates-slider-next" type="button" class="swiper-btn swiper-btn_next teamates-slider__btn-next">
+						Next CV
+						<svg class="svg-icon" viewbox="0 0 10 16">
+							<use href='@img/static/icons/icons.svg#90deg-arrow-right'></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script type="text/template" id="employee-card-template">
+	{{#.}}
+		<div class="teamate-card teamates-slider__slide swiper-slide" data-card-idx="{{__idx}}">
+			<div class="teamate-card__img-wrap img-wrap">
+				<img src="{{crb_photo}}" alt="Person photo" class="teamate-card__img">
+			</div>
+			<div class="teamate-card__header">
+				<div class="teamate-card__title">{{crb_person_title}}</div>
+				<h3 class="teamate-card__name">{{crb_person_name}}</h3>
+			</div>
+			<ul class="teamate-card__skills">
+			{{#crb_main_skills}}
+					<li class="teamate-card__skill-item">
+						<img src="{{crb_skill_icon}}" alt="research.svg" class="teamate-card__skill-icon">
+						<div class="teamate-card__skill-name">{{crb_skill_name}}</div>
+					</li>
+			{{/crb_main_skills}}
+			</ul>
+			<button type="button" class="text-btn teamate-card__btn">
+				<span class="text-btn__cap">View more</span>
+				<svg class="svg-icon" viewbox="0 0 18 16">
+					<use href='@img/static/icons/icons.svg#simple-arrow-right'></use>
+				</svg>
+			</button>
+		</div>
+	{{/.}}
+</script>

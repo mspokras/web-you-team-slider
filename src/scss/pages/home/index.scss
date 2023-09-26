@@ -1,0 +1,11 @@
+@use "sass:math";
+@import "../../config.scss";
+
+// Базовая разметка страницы
+@import "../../components/temate-card.scss";
+@import "../../components/team-slider.scss";
+@import "./welcome.scss";
+@import "./teams-review.scss";
+@import "./profile.scss";
+@import "./steps.scss";
+@import "./contact-form.scss";

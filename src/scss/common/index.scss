@@ -1,0 +1,41 @@
+@use "sass:math";
+@import "../config.scss";
+@import "../../../repo/scss/base/null.scss";
+
+// Подключение темы (набор цветов)
+@import "./theme.scss";
+
+// Подключить если есть локальные файлы шрифтов
+@import "./fonts.scss";
+
+// Базовая разметка страницы
+:root {
+	--container-save-space: 15px;
+	@media (max-width: $mbpSMEnd) {
+		--container-save-space: 10px;
+	}
+}
+.section-container {
+	max-width: calc($containerInnerWidth * 1px + var(--container-save-space) * 2);
+	padding: 0 var(--container-save-space);
+	margin: auto;
+}
+body {
+	overflow-x: hidden;
+}
+.page {
+	&__main {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@import "./fonts.scss";
+@import "./typography.scss";
+@import "./framework.scss";
+@import "../components/common.scss";
+@import "../components/header.scss";
+@import "../components/footer.scss";
+@import "../components/drawers.scss";
+@import "../components/cv-request-form.scss";

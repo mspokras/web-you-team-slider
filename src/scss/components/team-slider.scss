@@ -1,0 +1,130 @@
+.teamates-slider {
+	overflow: visible;
+	width: 100%;
+	&__wrapper {
+		margin-bottom: 30px;
+	}
+	&__slide {
+		height: auto;
+		transition-property: transform, opacity;
+		&[data-slide-position="-1"] {
+			opacity: 0.9;
+		}
+		&[data-slide-position="1"] {
+			opacity: 0.9;
+		}
+		&[data-slide-position="-2"] {
+			opacity: 0.8;
+		}
+		&[data-slide-position="2"] {
+			opacity: 0.8;
+		}
+		&[data-slide-position="-3"] {
+			opacity: 0.7;
+		}
+		&[data-slide-position="3"] {
+			opacity: 0.7;
+		}
+		&[data-slide-position="-4"] {
+			opacity: 0.6;
+		}
+		&[data-slide-position="4"] {
+			opacity: 0.6;
+		}
+	}
+	&__bottom {
+		display: flex;
+		justify-content: center;
+		visibility: hidden;
+	}
+	&__bottom-inner {
+		display: inline-grid;
+		grid-template-columns: repeat(3, auto);
+		gap: 100px;
+		align-items: center;
+		@media (max-width: $mbpESMEnd) {
+			grid-template-columns: repeat(2, auto);
+			gap: 9px 60px;
+		}
+	}
+	&__pagination {
+		flex: 0 1 max-content;
+		display: inline-block;
+		--swiper-pagination-bullet-horizontal-gap: 8px;
+		& .swiper-pagination-bullet {
+			width: 16px;
+			height: 16px;
+			border: 2px solid #67E000;
+			background-color: transparent;
+			transition: background-color 0.4s;
+		}
+		& .swiper-pagination-bullet-active {
+			background-color: #67E000;
+		}
+	}
+	&__counter {
+		display: inline-grid;
+		grid-template-columns: repeat(3, auto);
+		gap: 0.3em;
+		color: #C279FF;
+		font-family: Thunder;
+		font-size: 26px;
+		font-style: italic;
+		font-weight: 600;
+		line-height: 24px;
+		letter-spacing: 0.02em;
+		@media (max-width: $mbpESMEnd) {
+			grid-row: 1/ span 1;
+			grid-column: auto/span 2;
+			justify-self: center;
+		}
+	}
+	&__current {
+		color: #1F1F1F;
+		text-align: right;
+		font-size: 36px;
+		letter-spacing: 0.72px;
+	}
+	&__total {
+	}
+}
+.swiper-btn {
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	font-size: 0;
+	border: 2px solid #9DF850;
+	border-radius: 50%;
+	background-color: #161616;
+	transition: filter 0.4s;
+	&:hover {
+		filter: drop-shadow(0px 0px 30px rgba(117, 255, 0, 0.50));
+	}
+	& .svg-icon {
+		flex: 0 0 auto;
+		fill: #9DF850;
+		width: 8px;
+		transition: left 0.4s, right 0.4s;
+	}
+	
+	&_prev .svg-icon, &_next .svg-icon {
+		position: relative;
+		top: 0;
+		z-index: 0;
+	}
+	&_prev .svg-icon {
+		left: -2%;
+	}
+	&_next .svg-icon {
+		right: -2%;
+	}
+	&_prev:hover .svg-icon {
+		left: -8%;
+	}
+	&_next:hover .svg-icon {
+		right: -8%;
+	}
+}

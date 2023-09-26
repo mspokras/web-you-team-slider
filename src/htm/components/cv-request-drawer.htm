@@ -1,0 +1,84 @@
+<div class="drawer drawer_overlapping drawer_modal cv-request-form" data-drawer="cv-request-form" data-scrollable>
+	<div class="drawer__panel cv-request-form__panel" data-drawer-panel>
+		<div class="drawer__inner cv-request-form__inner">
+			<div class="drawer__header cv-request-form__header">
+				<button type="button" class="close-btn drawer__close-btn" data-drawer-close="cv-request-form">
+					Close
+				</button>
+			</div>
+			<div class="drawer__body cv-request-form__body">
+				<div class="cv-request-form__title">Please fill out the form and we will send you the CV of the selected specialist and answer all your questions!</div>
+				<form id="cv-request-contact-form" class="contact-form cv-request-form__form">
+					<div class="contact-form__body">
+						<div class="form-field" data-track-child-is-filled>
+							<label for="name" class="form-field__label">Name*</label>
+							<div class="form-field__input form-input">
+								<div class="form-input__wrap">
+									<input required data-msg="Please enter your name"  id="name" name="name" type="text" placeholder="Enter your name*">
+								</div>
+							</div>
+						</div>
+						<div class="form-field" data-track-child-is-filled>
+							<label for="name" class="form-field__label">Email*</label>
+							<div class="form-field__input form-input">
+								<div class="form-input__wrap">
+									<input
+										required
+										data-msg="Please enter an email address"
+										data-rule-email
+										data-msg-email="Invalid email address."
+										id="email" name="email" type="text" placeholder="Enter your email*">
+								</div>
+							</div>
+						</div>
+						<div class="form-field" data-track-child-is-filled>
+							<label for="message" class="form-field__label">Message</label>
+							<div class="form-field__input form-input">
+								<textarea id="message" name="message" placeholder="Enter the project title / question (optional)" rows="1"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="contact-form__msg-container">
+						<div class="disclosure contact-form__msg-disclosure" data-msg-disclosure="data-not-sent">
+							<div class="disclosure__inner">
+								<div class="contact-form__msg contact-form__msg_error">
+									You have unsent information, please click “Send” button to send your information
+								</div>
+							</div>
+						</div>
+						<div class="disclosure contact-form__msg-disclosure" data-msg-disclosure="data-successfully-sent">
+							<div class="disclosure__inner">
+								<div class="contact-form__msg contact-form__msg_success">
+									Your request has been successfuly processed, our managers will contact you as soon as possible.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact-form__bottom">
+						<div class="contact-form__bottom-inner">
+							<button type="submit" class="btn btn_dark contact-form__send-btn">
+								<span class="btn__bg"></span>
+								<span class="btn__inner">
+									<svg class="svg-icon" viewbox="0 0 24 24">
+										<use href='@img/static/icons/icons.svg#rocket'></use>
+									</svg>
+									<span class="btn__cap">Send</span>
+								</span>
+							</button>
+							<div class="contact-form__separator">or</div>
+							<a href="<?php echo carbon_get_theme_option('crb_watsapp_call') ?>" class="btn btn_dark contact-form__call-btn" target="_blank">
+								<span class="btn__bg"></span>
+								<span class="btn__inner">
+									<svg class="svg-icon" viewbox="0 0 22 22">
+										<use href='@img/static/icons/icons.svg#watsapp'></use>
+									</svg>
+									<span class="btn__cap">WhatsApp call</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

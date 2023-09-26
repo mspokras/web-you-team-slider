@@ -1,0 +1,108 @@
+.cv-request-form {
+	padding-left: 25px;
+	padding-right: 25px;
+	@media (max-width: $mbpMEnd) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@media (max-width: $mbpSMEnd) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	&__inner {
+		border-radius: 30px;
+		background: #FFF;
+		box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.70);
+		@media (max-width: $mbpMEnd) {
+			border-radius: 20px;
+		}
+	}
+	&__header {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 30px 30px 0;
+		@media (max-width: $mbpSMEnd) {
+			padding: 20px 20px 0;
+		}
+	}
+	&__body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+		padding: 64px 80px 70px;
+		@media (max-width: $mbpPCEnd) {
+			padding: 50px 60px 50px;
+		}
+		@media (max-width: 840px) {
+			grid-template-columns: 1fr;
+			gap: 30px;
+		}
+		@media (max-width: $mbpMEnd) {
+			padding: 35px;
+		}
+		@media (max-width: $mbpSMEnd) {
+			padding: 20px;
+		}
+	}
+	&__title {
+		color: transparent;
+		font-family: Thunder;
+		font-size: 50px;
+		font-style: normal;
+		font-weight: 800;
+		background: linear-gradient(307deg, #161616 0%, #260046 18.82%, #2A004E 36.26%, #500092 56.78%, #3A006A 75.58%, #2A004E 88.57%, #2A004E 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		@media (min-width: $mbpSMStart) and (max-width: $mbpPCEnd) {
+			font-size: aval(42, 50, 0, $mbpSMStartNu, $mbpPCEndNu);
+		}
+		@media (max-width: $mbpSMEnd) {
+			font-size: 42px;
+		}
+	}
+	&__form {
+	}
+	&__form .contact-form__bottom-inner {
+		flex-direction: column;
+		align-items: center;
+	}
+	& &__panel {
+		max-width: 1160px;
+		@media (max-width: 720px) {
+			max-width: 100%;
+		}
+	}
+}
+.close-btn {
+	display: inline-block;
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	cursor: pointer;
+	transition: transform 0.4s;
+	&:hover {
+		transform: rotateZ(90deg);
+	}
+	&::before, &::after {
+		content: "";
+		position: absolute;
+		left: 10%;
+		top: calc(50% - 1.25px);
+		width: 80%;
+		height: 2.5px;
+		background-color: #FF1D53;
+		border-radius: 1.25px;
+	}
+	&::before {
+		transform: rotateZ(-45deg);
+	}
+	&::after {
+		transform: rotateZ(45deg);
+	}
+}
+

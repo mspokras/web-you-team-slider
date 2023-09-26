@@ -1,0 +1,121 @@
+.footer-nav {
+	& > ul {
+		display: inline-grid;
+		grid-template-columns: repeat(2, auto);
+		gap: 20px 32px;
+		align-items: center;
+		// @media (max-width: 1150px) {
+		// 	grid-template-columns: auto;
+		// }
+	}
+	& > ul > li {
+		font-family: Montserrat;
+		font-size: 18px;
+		max-width: 200px;
+		line-height: 1.3;
+		& > strong {
+			font-size: 20px;
+			font-weight: 500;
+		}
+	}
+}
+.footer {
+	background-color: #C279FF;
+	padding: 40px 20px 30px 20px;
+	clip-path: polygon(0px 40.038px, 0px 40.038px, 0.5588472px 33.3309693514px, 2.1736176px 26.9914936112px, 4.7516544px 21.1077370878px, 8.2003008px 15.7678640896px, 12.4269px 11.060038925px, 17.3387952px 7.0724259024px, 22.8433296px 3.8931893302px, 28.8478464px 1.6104935168px, 35.2596888px 0.3125027706px, 41.9862px 0.0873814px, calc(100% - 64.15px) 66.4018px, calc(100% - 64.15px) 66.4018px, calc(100% - 58.6237px) 67.0616897px, calc(100% - 53.344px) 68.4483216px, calc(100% - 48.3667px) 70.5120199px, calc(100% - 43.7476px) 73.2031088px, calc(100% - 39.5425px) 76.4719125px, calc(100% - 35.8072px) 80.2687552px, calc(100% - 32.5975px) 84.5439611px, calc(100% - 29.9692px) 89.2478544px, calc(100% - 27.9781px) 94.3307593px, calc(100% - 26.68px) 99.743px, calc(100% - 0px) calc(100% - 0px), 0px calc(100% - 0px), 0px 40.038px);
+	@media (max-width: $mbpMEnd) {
+		clip-path: polygon(0px 40.7197px, 0px 40.7197px, 0.6211191px 33.64152803px, 2.4098208px 26.99400864px, 5.2541217px 20.87511661px, 9.0420384px 15.38282672px, 13.6615875px 10.61511375px, 19.0007856px 6.66995248px, 24.9476493px 3.64531769px, 31.3901952px 1.63918416px, 38.2164399px 0.74952667px, 45.3144px 1.07432px, calc(100% - 36.521px) 40.3725px, calc(100% - 36.521px) 40.3725px, calc(100% - 30.743631px) 41.5828094px, calc(100% - 25.323808px) 43.5779392px, calc(100% - 20.319857px) 46.2915318px, calc(100% - 15.790104px) 49.6572296px, calc(100% - 11.792875px) 53.608675px, calc(100% - 8.386496px) 58.0795104px, calc(100% - 5.6292930000001px) 63.0033782px, calc(100% - 3.579592px) 68.3139208px, calc(100% - 2.295719px) 73.9447806px, calc(100% - 1.8360000000001px) 79.8296px, calc(100% - 0px) calc(100% - 0px), 0px calc(100% - 0px), 0px 40.7197px); 
+		padding: 20px 10px;
+	}
+	&__container {
+		position: relative;
+		left: 0;
+		top: 0;
+		z-index: 0;
+		padding-top: 40px;
+		padding-bottom: 15px;
+		--container-save-space: 60px;
+		max-width: 1620px;
+		@media (max-width: $mbpMEnd) {
+			--container-save-space: 10px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(170deg, #161616 0%, #260046 32.29%, #2A004E 57.29%, #500092 78.65%, #3A006A 100%, #2A004E 100%);
+			clip-path: polygon(0.5936px 35.6126px, 0.5936px 35.6126px, 0.23286309px 30.12755794px, 0.84287392px 24.84791832px, 2.34335183px 19.86504098px, 4.65401616px 15.27028576px, 7.69458625px 11.1550125px, 11.38478144px 7.61058104px, 15.64432107px 4.72835122px, 20.39292448px 2.59968288px, 25.55031101px 1.31593586px, 31.0362px 0.96847px, calc(100% - 48.04px) 36.4413px, calc(100% - 48.04px) 36.4413px, calc(100% - 43.89656px) 36.8396239px, calc(100% - 39.92448px) 37.7840912px, calc(100% - 36.16612px) 39.2387853px, calc(100% - 32.66384px) 41.1677896px, calc(100% - 29.46px) 43.5351875px, calc(100% - 26.59696px) 46.3050624px, calc(100% - 24.11708px) 49.4414977px, calc(100% - 22.06272px) 52.9085768px, calc(100% - 20.47624px) 56.6703831px, calc(100% - 19.4px) 60.691px, calc(100% - 0.97000000000003px) calc(100% - 35.739px), calc(100% - 0.97000000000003px) calc(100% - 35.739px), calc(100% - 0.40759999999977px) calc(100% - 30.237462px), calc(100% - 0.83399999999961px) calc(100% - 24.909696px), calc(100% - 2.1706000000001px) calc(100% - 19.851174px), calc(100% - 4.3388px) calc(100% - 15.157368px), calc(100% - 7.26px) calc(100% - 10.92375px), calc(100% - 10.8556px) calc(100% - 7.245792px), calc(100% - 15.047px) calc(100% - 4.218966px), calc(100% - 19.7556px) calc(100% - 1.938744px), calc(100% - 24.9028px) calc(100% - 0.50059800000002px), calc(100% - 30.41px) calc(100% - 2.8421709430404E-14px), 50.6557px calc(100% - 0px), 50.6557px calc(100% - 0px), 46.2983333px calc(100% - 0.315676px), 42.1213464px calc(100% - 1.2350479999999px), 38.1732391px calc(100% - 2.716632px), 34.5025112px calc(100% - 4.718944px), 31.1576625px calc(100% - 7.2005px), 28.1871928px calc(100% - 10.119816px), 25.6396019px calc(100% - 13.435408px), 23.5633896px calc(100% - 17.105792px), 22.0070557px calc(100% - 21.089484px), 21.0191px calc(100% - 25.345px), 0.5936px 35.6126px); 
+			@media (max-width: $mbpMEnd) {
+				clip-path: polygon(0px 30.2974px, 0px 30.2974px, 0.4492385px 25.086216501px, 1.74448px 20.180904008px, 3.8070135px 15.652379527px, 6.558128px 11.571560064px, 9.9191125px 8.009362625px, 13.811256px 5.036704216px, 18.1558475px 2.724501843px, 22.874176px 1.143672512px, 27.8875305px 0.365133229px, 33.1172px 0.459801px, calc(100% - 26.883px) 31.2789px, calc(100% - 26.883px) 31.2789px, calc(100% - 22.417479px) 32.0874635px, calc(100% - 18.220032px) 33.520228px, calc(100% - 14.338233px) 35.5243845px, calc(100% - 10.819656px) 38.047124px, calc(100% - 7.711875px) 41.0356375px, calc(100% - 5.062464px) 44.437116px, calc(100% - 2.918997px) 48.1987505px, calc(100% - 1.3290479999999px) 52.267732px, calc(100% - 0.340191px) 56.5912515px, calc(100% - 5.6843418860808E-14px) 61.1165px, calc(100% - 0px) calc(100% - 30px), calc(100% - 0px) calc(100% - 30px), calc(100% - 0.39263699999998px) calc(100% - 25.133733px), calc(100% - 1.529376px) calc(100% - 20.517504px), calc(100% - 3.348459px) calc(100% - 16.213071px), calc(100% - 5.788128px) calc(100% - 12.282192px), calc(100% - 8.786625px) calc(100% - 8.786625px), calc(100% - 12.282192px) calc(100% - 5.788128px), calc(100% - 16.213071px) calc(100% - 3.348459px), calc(100% - 20.517504px) calc(100% - 1.529376px), calc(100% - 25.133733px) calc(100% - 0.39263700000004px), calc(100% - 30px) calc(100% - 0px), 30px calc(100% - 0px), 30px calc(100% - 0px), 25.1338545px calc(100% - 0.39263699999998px), 20.517696px calc(100% - 1.5293759999998px), 16.2132915px calc(100% - 3.348459px), 12.282408px calc(100% - 5.788128px), 8.7868125px calc(100% - 8.786625px), 5.788272px calc(100% - 12.282192px), 3.3485535px calc(100% - 16.213071px), 1.529424px calc(100% - 20.517504px), 0.3926505px calc(100% - 25.133733px), 4.9666805852231E-31px calc(100% - 30px), 0px 30.2974px); 
+			}
+		}
+	}
+	&__body {
+		pointer-events: none;
+		margin-bottom: 30px;
+	}
+	&__body-inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		margin-left: -90px;
+		margin-top: -30px;
+		@media (max-width: 900px) {
+			flex-direction: column;
+			margin-left: 0;
+		}
+		& > * {
+			margin-left: 90px;
+			margin-top: 30px;
+			pointer-events: all;
+			@media (max-width: 900px) {
+				margin-left: 0;
+			}
+		}
+	}
+	&__logo {
+		margin-bottom: 28px;
+	}
+	&__group {
+		display: flex;
+		flex-direction: column;
+	}
+	&__social-media {
+	}
+	&__nav {
+		margin-right: auto;
+		@media (max-width: 900px) {
+			margin-right: 0;
+			& > ul {
+				grid-template-columns: repeat(2, 1fr);
+				text-align: center;
+			}
+		}
+		@media (max-width: 650px) {
+			& > ul {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	&__btn-area {
+		flex: 0 0 auto;
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__btn {
+	}
+	&__copyright {
+		color: var(--white, #FFF);
+		text-align: center;
+		font-family: Montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}

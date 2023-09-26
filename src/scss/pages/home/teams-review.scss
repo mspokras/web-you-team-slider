@@ -1,0 +1,159 @@
+.teams-review {
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	margin-top: -5%;
+	margin-bottom: 0;
+	overflow: hidden;
+	@media (max-width: $mbpMEnd) {
+		margin-top: -3%;
+	}
+	@media (max-width: $mbpSMEnd) {
+		margin-top: 3%;
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		&:first-child {
+			margin-bottom: 45px;
+			@media (max-width: $mbpMEnd) {
+				margin-bottom: 35px;
+			}
+		}
+		&:nth-child(2) {
+			max-width: 1543px;
+			--container-save-space: 5px;
+			margin-bottom: 30px;
+		}
+		&:nth-child(3) {
+			--container-save-space: 25px;
+		}
+	}
+	&__call {
+		align-self: flex-end;
+		display: inline-block;
+		max-width: 870px;
+		color: transparent;
+		font-family: Thunder;
+		font-size: 130px;
+		font-weight: 800;
+		background: linear-gradient(127deg, #161616 0%, #260046 10.86%, #2A004E 24.10%, #500092 41.91%, #3A006A 70.64%, #2A004E 88.57%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		@media (min-width: $mbpSMStart) and (max-width: $mbpPCEnd) {
+			font-size: aval(60, 130, 0, $mbpSMStartNu, $mbpPCEndNu);
+		}
+		@media screen and (max-width: $mbpESMEnd) {
+			font-size: 60px;
+		}
+		@media (min-width: $mbpMStart) and (max-width: $mbpPCEnd) {
+			max-width: aval(510, 870, 0, $mbpMStartNu, $mbpPCEndNu);
+		}
+		@media (min-width: $mbpSMStart) and (max-width: $mbpMEnd) {
+			max-width: aval(300, 430, 0, $mbpSMStartNu, $mbpMEndNu);
+		}
+		@media screen and (max-width: $mbpESMEnd) {
+			max-width: 270px;
+			font-size: 50px;
+		}
+		@media screen and (max-width: 320px) {
+			max-width: 250px;
+			font-size: 40px;
+		}
+	}
+	&__team-filter {
+		margin-bottom: 60px;
+	}
+	&__swipe-area-pointer {
+		position: absolute;
+		right: 30px;
+		bottom: -60px;
+		z-index: 10;
+		@media (max-width: $mbpSMEnd) {
+			bottom: -55px;
+		}
+	}
+}
+.section-nav {
+	position: relative;
+	left: 0;
+	top: 0;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: -2;
+		width: 100.5%;
+		height: 235%;
+		background-color: #C279FF;
+		clip-path: polygon(22.3315px 42.9384px, 22.3315px 42.9384px, 23.3069249px 40.6792617px, 24.5318352px 38.5878456px, 25.9848943px 36.6794499px, 27.6447656px 34.9693728px, 29.4901125px 33.4729125px, 31.4995984px 32.2053672px, 33.6518867px 31.1820351px, 35.9256408px 30.4182144px, 38.2995241px 29.9292033px, 40.7522px 29.7303px, calc(100% - 21.21px) 0.57282px, calc(100% - 21.21px) 0.57282px, calc(100% - 17.12625px) 0.901554314px, calc(100% - 13.3536px) 1.993392832px, calc(100% - 9.9559500000003px) 3.758675118px, calc(100% - 6.9972000000002px) 6.107740736px, calc(100% - 4.5412500000002px) 8.95092925px, calc(100% - 2.6519999999998px) 12.198580224px, calc(100% - 1.3933500000001px) 15.761033222px, calc(100% - 0.8291999999999px) 19.548627808px, calc(100% - 1.0234499999999px) 23.471703546px, calc(100% - 2.0400000000002px) 27.4406px, calc(100% - 17.35px) calc(100% - 57.7228px), calc(100% - 17.35px) calc(100% - 57.7228px), calc(100% - 18.32129px) calc(100% - 55.494854px), calc(100% - 19.53552px) calc(100% - 53.430936px), calc(100% - 20.97223px) calc(100% - 51.545866px), calc(100% - 22.61096px) calc(100% - 49.854464px), calc(100% - 24.43125px) calc(100% - 48.37155px), calc(100% - 26.41264px) calc(100% - 47.111944px), calc(100% - 28.53467px) calc(100% - 46.090466px), calc(100% - 30.77688px) calc(100% - 45.321936px), calc(100% - 33.11881px) calc(100% - 44.821174px), calc(100% - 35.54px) calc(100% - 44.603px), 21.3722px calc(100% - 0.861px), 21.3722px calc(100% - 0.861px), 17.27314874px calc(100% - 1.1521906px), 13.48018352px calc(100% - 2.2136048px), 10.05845318px calc(100% - 3.9553062px), 7.07310656px calc(100% - 6.2873584px), 4.5892925px calc(100% - 9.119825px), 2.67215984px calc(100% - 12.3627696px), 1.38685742px calc(100% - 15.9262558px), 0.79853408px calc(100% - 19.7203472px), 0.97233866px calc(100% - 23.6551074px), 1.97342px calc(100% - 27.6406px), 22.3315px 42.9384px);
+		transform: translate(-50.25%, -42%);
+		@media (max-width: $mbpMEnd) {
+			clip-path: polygon(19.0118px 22.8292px, 19.0118px 22.8292px, 20.0382133px 20.7420249px, 21.2816064px 18.8134712px, 22.7235791px 17.0561563px, 24.3457312px 15.4826976px, 26.1296625px 14.1057125px, 28.0569728px 12.9378184px, 30.1092619px 11.9916327px, 32.2681296px 11.2797728px, 34.5151757px 10.8148561px, 36.832px 10.6095px, calc(100% - 20.213px) 0.964999px, calc(100% - 20.213px) 0.964999px, calc(100% - 15.949721px) 1.278584072px, calc(100% - 12.029528px) 2.419490976px, calc(100% - 8.521487px) 4.285204444px, calc(100% - 5.4946639999999px) 6.773209208px, calc(100% - 3.0181249999999px) 9.78099px, calc(100% - 1.1609359999999px) 13.206031552px, calc(100% - -0.007836999999995px) 16.945818596px, calc(100% - -0.419128px) 20.897835864px, calc(100% - -0.0038710000000037px) 24.959568088px, calc(100% - 1.3070000000001px) 29.0285px, calc(100% - 13.636px) calc(100% - 35.0244px), calc(100% - 13.636px) calc(100% - 35.0244px), calc(100% - 14.636169px) calc(100% - 33.058028px), calc(100% - 15.831032px) calc(100% - 31.235332px), calc(100% - 17.204923px) calc(100% - 29.567322px), calc(100% - 18.742176px) calc(100% - 28.065008px), calc(100% - 20.427125px) calc(100% - 26.7394px), calc(100% - 22.244104px) calc(100% - 25.601508px), calc(100% - 24.177447px) calc(100% - 24.662342px), calc(100% - 26.211488px) calc(100% - 23.932912px), calc(100% - 28.330561px) calc(100% - 23.424228px), calc(100% - 30.519px) calc(100% - 23.1473px), 21.5058px calc(100% - 0.306px), 21.5058px calc(100% - 0.306px), 17.17661333px calc(100% - 0.45435959999999px), 13.16965504px calc(100% - 1.4635368px), 9.55948971px calc(100% - 3.2293692px), 6.42068192px calc(100% - 5.6476944px), 3.82779625px calc(100% - 8.61435px), 1.85539728px calc(100% - 12.0251736px), 0.57804959px calc(100% - 15.7760028px), 0.07031776px calc(100% - 19.7626752px), 0.40676637px calc(100% - 23.8810284px), 1.66196px calc(100% - 28.0269px), 19.0118px 22.8292px);
+		}
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: -1;
+		width: 100%;
+		height: 200%;
+		background: linear-gradient(139deg, #161616 0%, #260046 24.18%, #2A004E 39.24%, #45017D 52.24%, #500092 61.79%, #45017D 70.34%, #3A006A 80.00%, #2A004E 100%);
+		clip-path: polygon(16.172px 42.5529px, 16.172px 42.5529px, 17.1735527px 40.3538988px, 18.4130336px 38.3206104px, 19.8700469px 36.4673376px, 21.5241968px 34.8083832px, 23.3550875px 33.35805px, 25.3423232px 32.1306408px, 27.4655081px 31.1404584px, 29.7042464px 30.4018056px, 32.0381423px 29.9289852px, 34.4468px 29.7363px, calc(100% - 20.74px) 0.58305px, calc(100% - 20.74px) 0.58305px, calc(100% - 16.61802px) 0.918390952px, calc(100% - 12.81536px) 2.029803776px, calc(100% - 9.3969400000001px) 3.824781024px, calc(100% - 6.4276799999998px) 6.210815248px, calc(100% - 3.9724999999999px) 9.095399px, calc(100% - 2.0963199999999px) 12.386024832px, calc(100% - 0.86405999999988px) 15.990185296px, calc(100% - 0.34063999999989px) 19.815372944px, calc(100% - 0.59098000000017px) 23.769080328px, calc(100% - 1.6800000000003px) 27.7588px, calc(100% - 16.17px) calc(100% - 42.5529px), calc(100% - 16.17px) calc(100% - 42.5529px), calc(100% - 17.17189px) calc(100% - 40.3538988px), calc(100% - 18.41192px) calc(100% - 38.3206104px), calc(100% - 19.86963px) calc(100% - 36.4673376px), calc(100% - 21.52456px) calc(100% - 34.8083832px), calc(100% - 23.35625px) calc(100% - 33.35805px), calc(100% - 25.34424px) calc(100% - 32.1306408px), calc(100% - 27.46807px) calc(100% - 31.1404584px), calc(100% - 29.70728px) calc(100% - 30.4018056px), calc(100% - 32.04141px) calc(100% - 29.9289852px), calc(100% - 34.45px) calc(100% - 29.7363px), 20.7355px calc(100% - 0.583px), 20.7355px calc(100% - 0.583px), 16.61354445px calc(100% - 0.91844829999999px), 12.8110328px calc(100% - 2.0299264px), 9.39284455px calc(100% - 3.8249341px), 6.4238592px calc(100% - 6.2109712px), 3.96895625px calc(100% - 9.0955375px), 2.0930152px calc(100% - 12.3861328px), 0.86091555px calc(100% - 15.9902569px), 0.3375368px calc(100% - 19.8154096px), 0.58775845px calc(100% - 23.7690907px), 1.67646px calc(100% - 27.7588px), 16.172px 42.5529px);
+		transform: translate(-50%, -50%);
+		@media (max-width: $mbpMEnd) {
+			clip-path: polygon(13.8477px 23.1634px, 13.8477px 23.1634px, 14.9004517px 21.1819173px, 16.1514296px 19.3531544px, 17.5838979px 17.6882491px, 19.1811208px 16.1983392px, 20.9263625px 14.8945625px, 22.8028872px 13.7880568px, 24.7939591px 12.8899599px, 26.8828424px 12.2114096px, 29.0528013px 11.7635437px, 31.2871px 11.5575px, calc(100% - 21.512px) 0.170803px, calc(100% - 21.512px) 0.170803px, calc(100% - 17.194262px) 0.469232109px, calc(100% - 13.227656px) 1.615508672px, calc(100% - 9.682994px) 3.503222443px, calc(100% - 6.631088px) 6.025963176px, calc(100% - 4.14275px) 9.077320625px, calc(100% - 2.288792px) 12.550884544px, calc(100% - 1.140026px) 16.340244687px, calc(100% - 0.76726400000007px) 20.338990808px, calc(100% - 1.241318px) 24.440712661px, calc(100% - 2.633px) 28.539px, calc(100% - 13.848px) calc(100% - 23.1634px), calc(100% - 13.848px) calc(100% - 23.1634px), calc(100% - 14.9007px) calc(100% - 21.1819173px), calc(100% - 16.15164px) calc(100% - 19.3531544px), calc(100% - 17.58408px) calc(100% - 17.6882491px), calc(100% - 19.18128px) calc(100% - 16.1983392px), calc(100% - 20.9265px) calc(100% - 14.8945625px), calc(100% - 22.803px) calc(100% - 13.7880568px), calc(100% - 24.79404px) calc(100% - 12.8899599px), calc(100% - 26.88288px) calc(100% - 12.2114096px), calc(100% - 29.05278px) calc(100% - 11.7635437px), calc(100% - 31.287px) calc(100% - 11.5575px), 21.5123px calc(100% - 0.1708px), 21.5123px calc(100% - 0.1708px), 17.1944036px calc(100% - 0.46924109999999px), 13.2276668px calc(100% - 1.6155248px), 9.6829052px calc(100% - 3.5032417px), 6.6309344px calc(100% - 6.0259824px), 4.14257px calc(100% - 9.0773375px), 2.2886276px calc(100% - 12.5508976px), 1.1399228px calc(100% - 16.3402533px), 0.7672712px calc(100% - 20.3389952px), 1.2414884px calc(100% - 24.4407139px), 2.63339px calc(100% - 28.539px), 13.8477px 23.1634px); 
+		}
+	}
+	&__container {
+		max-width: 1340px;
+		padding: 0 35px;
+		margin: auto;
+	}
+	&__slider {
+		transform: rotate(-1.3deg);
+		@media (max-width: $mbpTEnd) {
+			transform: rotate(-1.9deg);
+		}
+		@media (max-width: $mbpMEnd) {
+			transform: rotate(-1.5deg);
+		}
+	}
+	&__wrapper {
+		justify-content: space-between;
+		& > * {
+			width: auto;
+			margin: 0 32px;
+			@media (max-width: $mbpMEnd) {
+				margin: 0 16px;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 50px;
+		font-size: 22px;
+		font-weight: 500;
+		text-align: center;
+		cursor: pointer;
+		@media (max-width: $mbpMEnd) {
+			min-height: 40px;
+			font-size: 18px;
+		}
+		@media (max-width: $mbpSMEnd) {
+			font-size: 16px;
+		}
+	}
+}

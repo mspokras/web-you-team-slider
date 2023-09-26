@@ -1,0 +1,93 @@
+<section id="profile" class="profile">
+	<div class="profile__main">
+		<div class="section-container">
+			<div id="profile-main" class="profile__container">
+				<div class="profile__photo img-wrap">
+					<img alt="Employee photo">
+				</div>
+				<h3 class="profile__name">Loading ...</h3>
+				<div class="profile__title">Loading ...</div>
+				<div class="profile__experience">Loading ...</div>
+				<div class="profile__areas">
+					<span class="profile__areas-term">Areas of expertise:</span>
+					<span class="profile__areas-list">Loading ...</span>
+				</div>
+				<button type="button" class="btn btn_bright profile__download-btn">
+					<span class="btn__bg"></span>
+					<span class="btn__inner">
+						<svg class="svg-icon" viewbox="0 0 32 28">
+							<use href='@img/static/icons/icons.svg#download'></use>
+						</svg>
+						<span class="btn__cap">Download CV</span>
+					</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="profile__skills">
+		<div class="section-container">
+			<div class="profile__skills-rates skills-rates">
+				<h3 class="skills-rates__title">List of skills:</h3>
+				<div class="skills-rates__body">
+					<div id="profile-skills-rates" class="skills-rates__body-inner">
+					</div>
+				</div>
+			</div>
+			<div class="profile__skills-cloud skills-cloud">
+				<div class="skills-cloud__bg img-wrap img-wrap_contain">
+					<img src="@img/static/cloud.svg" alt="cloud.svg">
+				</div>
+				<div id="profile-tags-cloud" class="skills-cloud__body">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script type="text/template" id="employee-profile-template">
+	<div class="profile__photo img-wrap">
+		<img src="{{crb_cv_photo}}" alt="Person photo">
+	</div>
+	<h3 class="profile__name">{{crb_person_name}}</h3>
+	<div class="profile__title">{{crb_person_title}}</div>
+	<div class="profile__experience">{{crb_exp}}</div>
+	<div class="profile__areas">
+		<span class="profile__areas-term">Areas of expertise:</span>
+		<span class="profile__areas-list">{{crb_areas_of_exp}}</span>
+	</div>
+	<button type="button" class="btn btn_bright profile__download-btn">
+		<span class="btn__bg"></span>
+		<span class="btn__inner">
+			<svg class="svg-icon" viewbox="0 0 32 28">
+				<use href='@img/static/icons/icons.svg#download'></use>
+			</svg>
+			<span class="btn__cap">Download CV</span>
+		</span>
+	</button>
+</script>
+<script type="text/template" id="employee-skills-rates-template">
+	{{#.}}
+		<div class="skill-rate">
+			<div class="skill-rate__name">{{crb_name}}</div>
+			<div class="skill-rate__rate">
+				<div class="skill-rate__separator"></div>
+				<div class="skill-rate__stars">
+					{{#crb_rate}}
+						<svg class="svg-icon" viewbox="0 0 30 29">
+							<use href='@img/static/icons/icons.svg#star'></use>
+						</svg>
+					{{/crb_rate}}
+				</div>
+			</div>
+		</div>
+	{{/.}}
+</script>
+<script type="text/template" id="employee-tags-cloud-template">
+	<div class="skills-cloud__msg">{{crb_main_message}}</div>
+	<ul class="skills-cloud__items">
+		{{#crb_tags_cloud}}
+			<li class="skills-cloud__item" style="--placing-degree: {{placing-degree}}; --distance-shift: {{distance-shift}};">
+				<img src="{{crb_icon}}" alt="{{crb_name}}">
+			</li>
+		{{/crb_tags_cloud}}
+		</ul>
+</script>

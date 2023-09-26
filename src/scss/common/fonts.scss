@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Thunder';
+	src: local('☺'), url('../fonts/Thunder-BoldLC.woff') format('woff'),url('../fonts/Thunder-BoldLC.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Thunder';
+	src: local('☺'), url('../fonts/Thunder-BoldLCItalic.woff') format('woff'),url('../fonts/Thunder-BoldLCItalic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Thunder';
+	src: local('☺'), url('../fonts/Thunder-SemiBoldLCItalic.woff') format('woff'),url('../fonts/Thunder-SemiBoldLCItalic.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Thunder-Extra';
+	src: local('☺'), url('../fonts/Thunder-ExtraBoldLC.woff') format('woff'),url('../fonts/Thunder-ExtraBoldLC.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
