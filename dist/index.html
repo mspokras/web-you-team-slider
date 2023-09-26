@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>РамЛес - главная страница</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel='stylesheet' href='libs/swiper-10.0.4/swiper-bundle.min.css?_v=20230817154832'>
+	<link rel='stylesheet' href='css/common.min.css?_v=20230817154832'>
+	<link rel='stylesheet' href='css/home.min.css?_v=20230817154832'>
+	<!-- <link rel="stylesheet" href="css/swiper-bundle.min.css?_v=20230817154832"> -->
+
+	<!-- Libs and Common scripts -->
+	<script defered src='libs/jquery-3.6.2.min.js?_v=20230817154832'></script>
+	<script defered src='libs/jqueryValidate/jquery.validate.min.js?_v=20230817154832'></script>
+	<script defered src='libs/mustache.js?_v=20230817154832'></script>
+	<script defered src='libs/tua-bsl.umd.js?_v=20230817154832'></script>
+	<script defered src='js/common.min.js?_v=20230817154832'></script>
+
+	<!-- Page scripts -->
+	<script defered src='libs/swiper-10.0.4/swiper-bundle.min.js?_v=20230817154832'></script>
+	<script defered src='js/home.min.js?_v=20230817154832'></script>
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключение шрифтов      &display=swap - добавить при подключении через плагин -->
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap);
+		@import url(https://fonts.googleapis.com/css?family=Raleway:regular,500,600,700,800&display=swap);
+	</style>
+</head>
+
+<body>
+	<header class="header ">
+		<div class="header__container section-container">
+			<a href="https://web-you.pl/about/" class="header__logo logo">
+				<figure>
+					<img src="img/static/logo.svg" alt="logo.svg" class="logo__img">
+					<figcaption class="logo__cap">
+						<span>WEB <strong>YOU</strong></span>
+						<span>DIGITAL AGENCY</span>
+					</figcaption>
+				</figure>
+			</a>
+			<div class="header__nav" data-portal-src="main-nav-to-burger" data-portal-media="(max-width: 1150px)">
+				<nav class="main-nav">
+					<ul>
+						<li><a href="/#our-team" class="text-link underline-in" data-scroll-offset="-30">All specialists</a></li>
+						<li><a href="/#contact-form-section" class="text-link underline-in" data-scroll-offset="-30">Contact us</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__group">
+				<div class="lang-switch header__lang-switch">
+					<ul>
+						<li><a href="" class="text-link active">EN</a></li>
+						<li><a href="" class="text-link">PL</a></li>
+					</ul>
+				</div>
+				<div class="social-media header__social-media">
+					<ul>
+						<li>
+							<a href="" class="social-media-link">
+								Facebook
+								<svg class="svg-icon" viewbox="0 0 24 24">
+									<use href='img/static/icons/icons.svg#facebook'></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" class="social-media-link">
+								Instagram
+								<svg class="svg-icon" viewbox="0 0 24 24">
+									<use href='img/static/icons/icons.svg#instagram'></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" class="social-media-link">
+								Linkedin
+								<svg class="svg-icon" viewbox="0 0 24 24">
+									<use href='img/static/icons/icons.svg#linkedin'></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" class="social-media-link">
+								GitHub
+								<svg class="svg-icon" viewbox="0 0 24 24">
+									<use href='img/static/icons/icons.svg#github'></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" class="social-media-link">
+								upwork
+								<svg class="svg-icon" viewbox="0 0 24 24">
+									<use href='img/static/icons/icons.svg#upwork'></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="burger-menu header__burger-menu" data-drawer="burger-menu">
+					<div class="burger-menu__panel" data-drawer-panel>
+						<div class="burger-menu__inner">
+							<div class="burger-menu__container section-container">
+								<a href="https://web-you.pl/about/" class="burger-menu__logo logo">
+									<figure>
+										<img src="img/static/logo.svg" alt="logo.svg" class="logo__img">
+										<figcaption class="logo__cap">
+											<span>WEB <strong>YOU</strong></span>
+											<span>DIGITAL AGENCY</span>
+										</figcaption>
+									</figure>
+								</a>
+								<div class="burger-menu__nav" data-portal-dest="main-nav-to-burger"></div>
+								<div class="lang-switch burger-menu__lang-switch">
+									<ul>
+										<li><a href="" class="text-link active">EN</a></li>
+										<li><a href="" class="text-link">PL</a></li>
+									</ul>
+								</div>
+								<div class="social-media burger-menu__social-media">
+									<ul>
+										<li>
+											<a href="" class="social-media-link">
+												Facebook
+												<svg class="svg-icon" viewbox="0 0 24 24">
+													<use href='img/static/icons/icons.svg#facebook'></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="" class="social-media-link">
+												Instagram
+												<svg class="svg-icon" viewbox="0 0 24 24">
+													<use href='img/static/icons/icons.svg#instagram'></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="" class="social-media-link">
+												Linkedin
+												<svg class="svg-icon" viewbox="0 0 24 24">
+													<use href='img/static/icons/icons.svg#linkedin'></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="" class="social-media-link">
+												GitHub
+												<svg class="svg-icon" viewbox="0 0 24 24">
+													<use href='img/static/icons/icons.svg#github'></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="" class="social-media-link">
+												upwork
+												<svg class="svg-icon" viewbox="0 0 24 24">
+													<use href='img/static/icons/icons.svg#upwork'></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="header__burger-btn burger-btn" data-drawer-toggle="burger-menu">
+					Menu
+					<span class="burger-btn__icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</button>
+			</div>
+		</div>
+	</header>
+	<main class="page__main">
+		<!-- Sections -->
+		<section class="welcome">
+			<div class="welcome__underlay" id="webgl"></div>
+			<div class="welcome__container section-container">
+				<h1 class="page-title welcome__title">
+					<span>Meet Web You</span><span>Team of</span>
+					<strong>Digital Heroes</strong>
+				</h1>
+			</div>
+		</section>
+		<script defer="defer" src="js/bundle.27c9e87751ca60b5.js?_v=20230817154832"></script>
+		<section class="teams-review">
+			<div class="section-container teams-review__container">
+				<div class="teams-review__call">Choose the perfect team for your project:</div>
+			</div>
+			<div id="our-team" class="section-container teams-review__container">
+				<div class="teams-review__team-filter section-nav">
+					<div class="section-nav__container">
+						<div id="team-select-slider" class="section-nav__slider swiper">
+							<div id="department-select-wrapper" class="section-nav__wrapper swiper-wrapper">
+							</div>
+						</div>
+						<div class="swipe-area-pointer teams-review__swipe-area-pointer">
+							<svg class="swipe-area-pointer__icon" viewbox="0 0 28 28">
+								<use href='img/static/icons/icons.svg#swipe-area-pointer'></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-container teams-review__container">
+				<div id="teamates-slider" class="teamates-slider teams-review__teamates-slider swiper">
+					<div id="teamates-list-wrapper" class="teamates-slider__wrapper swiper-wrapper">
+						<!-- <div class="teamate-card teamates-slider__slide swiper-slide" data-headless-slide>
+					<div class="teamate-card__img-wrap img-wrap">
+						<img src="img/static/temates/viktoria-kabachenko.jpg" alt="viktoria-kabachenko.jpg" class="teamate-card__img">
+					</div>
+					<div class="teamate-card__header">
+						<div class="teamate-card__title">Head of Design Department</div>
+						<h3 class="teamate-card__name">Viktoria Kabachenko</h3>
+					</div>
+					<ul class="teamate-card__skills">
+						<li class="teamate-card__skill-item">
+							<img src="img/static/skill-icons/research.svg" alt="research.svg" class="teamate-card__skill-icon">
+							<div class="teamate-card__skill-name">UX Research</div>
+						</li>
+						<li class="teamate-card__skill-item">
+							<img src="img/static/skill-icons/desctop.svg" alt="desctop.svg" class="teamate-card__skill-icon">
+							<div class="teamate-card__skill-name">Web Design</div>
+						</li>
+						<li class="teamate-card__skill-item">
+							<img src="img/static/skill-icons/mobile.svg" alt="mobile.svg" class="teamate-card__skill-icon">
+							<div class="teamate-card__skill-name">Mobile apps Design</div>
+						</li>
+						<li class="teamate-card__skill-item">
+							<img src="img/static/skill-icons/vector-based-design.png" alt="vector-based-design.svg" class="teamate-card__skill-icon">
+							<div class="teamate-card__skill-name">Logotypes, Branding</div>
+						</li>
+					</ul>
+					<a href="./viktoria-kabachenko.html" class="text-btn teamate-card__btn">
+						<span class="text-btn__cap">View more</span>
+						<svg class="svg-icon" viewbox="0 0 18 16">
+							<use href='img/static/icons/icons.svg#simple-arrow-right'></use>
+						</svg>
+					</a>
+				</div> -->
+						<div class="teamate-card-stub swiper-slide">
+						</div>
+						<div class="teamate-card-stub swiper-slide">
+						</div>
+						<div class="teamate-card-stub swiper-slide">
+						</div>
+						<div class="teamate-card-stub swiper-slide">
+						</div>
+						<div class="teamate-card-stub swiper-slide">
+						</div>
+					</div>
+					<div class="teamates-slider__bottom">
+						<div class="teamates-slider__bottom-inner">
+							<button id="teamates-slider-prev" type="button" class="swiper-btn swiper-btn_prev teamates-slider__btn-prev">
+								Previous CV
+								<svg class="svg-icon" viewbox="0 0 10 16">
+									<use href='img/static/icons/icons.svg#90deg-arrow-left'></use>
+								</svg>
+							</button>
+							<!-- <div id="teamates-slider-pagination" class="teamates-slider__pagination"></div> -->
+							<div id="teamates-slider-counter" class="teamates-slider__counter">
+								<div class="teamates-slider__current">0</div>of<div class="teamates-slider__total">0</div>
+							</div>
+							<button id="teamates-slider-next" type="button" class="swiper-btn swiper-btn_next teamates-slider__btn-next">
+								Next CV
+								<svg class="svg-icon" viewbox="0 0 10 16">
+									<use href='img/static/icons/icons.svg#90deg-arrow-right'></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script type="text/template" id="employee-card-template">
+			{{#.}}
+				<div class="teamate-card teamates-slider__slide swiper-slide" data-card-idx="{{__idx}}">
+					<div class="teamate-card__img-wrap img-wrap">
+						<img src="{{crb_photo}}" alt="Person photo" class="teamate-card__img">
+					</div>
+					<div class="teamate-card__header">
+						<div class="teamate-card__title">{{crb_person_title}}</div>
+						<h3 class="teamate-card__name">{{crb_person_name}}</h3>
+					</div>
+					<ul class="teamate-card__skills">
+						{{#crb_main_skills}}
+							<li class="teamate-card__skill-item">
+								<img src="{{crb_skill_icon}}" alt="research.svg" class="teamate-card__skill-icon">
+								<div class="teamate-card__skill-name">{{crb_skill_name}}</div>
+							</li>
+						{{/crb_main_skills}}
+					</ul>
+					<button type="button" class="text-btn teamate-card__btn">
+						<span class="text-btn__cap">View more</span>
+						<svg class="svg-icon" viewbox="0 0 18 16">
+							<use href='img/static/icons/icons.svg#simple-arrow-right'></use>
+						</svg>
+					</button>
+				</div>
+			{{/.}}
+		</script>
+		<section id="profile" class="profile">
+			<div class="profile__main">
+				<div class="section-container">
+					<div id="profile-main" class="profile__container">
+						<div class="profile__photo img-wrap">
+							<img alt="Employee photo">
+						</div>
+						<h3 class="profile__name">Loading ...</h3>
+						<div class="profile__title">Loading ...</div>
+						<div class="profile__experience">Loading ...</div>
+						<div class="profile__areas">
+							<span class="profile__areas-term">Areas of expertise:</span>
+							<span class="profile__areas-list">Loading ...</span>
+						</div>
+						<button type="button" class="btn btn_bright profile__download-btn">
+							<span class="btn__bg"></span>
+							<span class="btn__inner">
+								<svg class="svg-icon" viewbox="0 0 32 28">
+									<use href='img/static/icons/icons.svg#download'></use>
+								</svg>
+								<span class="btn__cap">Download CV</span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="profile__skills">
+				<div class="section-container">
+					<div class="profile__skills-rates skills-rates">
+						<h3 class="skills-rates__title">List of skills:</h3>
+						<div class="skills-rates__body">
+							<div id="profile-skills-rates" class="skills-rates__body-inner">
+							</div>
+						</div>
+					</div>
+					<div class="profile__skills-cloud skills-cloud">
+						<div class="skills-cloud__bg img-wrap img-wrap_contain">
+							<img src="img/static/cloud.svg" alt="cloud.svg">
+						</div>
+						<div id="profile-tags-cloud" class="skills-cloud__body">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script type="text/template" id="employee-profile-template">
+			<div class="profile__photo img-wrap">
+		<img src="{{crb_cv_photo}}" alt="Person photo">
+	</div>
+	<h3 class="profile__name">{{crb_person_name}}</h3>
+	<div class="profile__title">{{crb_person_title}}</div>
+	<div class="profile__experience">{{crb_exp}}</div>
+	<div class="profile__areas">
+		<span class="profile__areas-term">Areas of expertise:</span>
+		<span class="profile__areas-list">{{crb_areas_of_exp}}</span>
+	</div>
+	<button type="button" class="btn btn_bright profile__download-btn">
+		<span class="btn__bg"></span>
+		<span class="btn__inner">
+			<svg class="svg-icon" viewbox="0 0 32 28">
+				<use href='img/static/icons/icons.svg#download'></use>
+			</svg>
+			<span class="btn__cap">Download CV</span>
+		</span>
+	</button>
+</script>
+		<script type="text/template" id="employee-skills-rates-template">
+			{{#.}}
+				<div class="skill-rate">
+					<div class="skill-rate__name">{{crb_name}}</div>
+					<div class="skill-rate__rate">
+						<div class="skill-rate__separator"></div>
+						<div class="skill-rate__stars">
+							{{#crb_rate}}
+								<svg class="svg-icon" viewbox="0 0 30 29">
+									<use href='img/static/icons/icons.svg#star'></use>
+								</svg>
+							{{/crb_rate}}
+						</div>
+					</div>
+				</div>
+			{{/.}}
+		</script>
+		<script type="text/template" id="employee-tags-cloud-template">
+			<div class="skills-cloud__msg">{{crb_main_message}}</div>
+	<ul class="skills-cloud__items">
+		{{#crb_tags_cloud}}
+			<li class="skills-cloud__item" style="--placing-degree: {{placing-degree}}; --distance-shift: {{distance-shift}};">
+				<img src="{{crb_icon}}" alt="{{crb_name}}">
+			</li>
+		{{/crb_tags_cloud}}
+		</ul>
+</script>
+		<section class="steps">
+			<div class="steps__top">
+				<div class="section-container steps__container">
+					<h2 class="steps__title">Get excellent result and maximum of profit with team of real professionals</h2>
+				</div>
+			</div>
+			<div class="steps__body">
+				<div class="steps__decor"></div>
+				<div class="section-container steps__container">
+					<div class="step-cards-layout steps__cards">
+						<ul class="step-cards-layout__inner">
+							<li>
+								<div class="step-card">
+									<div class="step-card__name">01. Explore our team and specialists skills</div>
+									<div class="step-card__text">Explore our professional digital specialists and their skills, you can ask any questions, just <button type="button" class="text-link">Contact us</button></div>
+								</div>
+							</li>
+							<li>
+								<div class="step-card">
+									<div class="step-card__name">02. Schedule the call with Business Analyst</div>
+									<div class="step-card__text">Discuss your project with our Business Analyst, we’ll build the development plan and estimate it.</div>
+								</div>
+							</li>
+							<li>
+								<div class="step-card">
+									<div class="step-card__name">03. Get awesome result!</div>
+									<div class="step-card__text">Our specialists will start work and show you the results by milestones. You’ll spend minimum time to get the maximum of result and value for your project and business!</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="contact-form-section">
+			<div id="contact-form-section" class="contact-form-section__container section-container">
+				<h2 class="contact-form-section__title">Contact us if you have any questions or want to discuss the project</h2>
+				<form id="main-contact-form" class="contact-form-section__form contact-form">
+					<div class="contact-form__body">
+						<div class="form-field" data-track-child-is-filled>
+							<label for="name" class="form-field__label">Name*</label>
+							<div class="form-field__input form-input">
+								<div class="form-input__wrap">
+									<input required data-msg="Please enter your name" id="name" name="name" type="text" placeholder="Enter your name*">
+								</div>
+							</div>
+						</div>
+						<div class="form-field" data-track-child-is-filled>
+							<label for="name" class="form-field__label">Email*</label>
+							<div class="form-field__input form-input">
+								<div class="form-input__wrap">
+									<input required data-msg="Please enter an email address" data-rule-email data-msg-email="Invalid email address." id="email" name="email" type="text" placeholder="Enter your email*">
+								</div>
+							</div>
+						</div>
+						<div class="form-field" data-track-child-is-filled>
+							<label for="message" class="form-field__label">Message</label>
+							<div class="form-field__input form-input">
+								<textarea id="message" name="message" placeholder="Enter the project title / question (optional)" rows="1"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="contact-form__msg-container">
+						<div class="disclosure contact-form__msg-disclosure" data-msg-disclosure="data-not-sent">
+							<div class="disclosure__inner">
+								<div class="contact-form__msg contact-form__msg_error">
+									You have unsent information, please click “Send” button to send your information
+								</div>
+							</div>
+						</div>
+						<div class="disclosure contact-form__msg-disclosure" data-msg-disclosure="data-successfully-sent">
+							<div class="disclosure__inner">
+								<div class="contact-form__msg contact-form__msg_success">
+									Your request has been successfuly processed, our managers will contact you as soon as possible.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact-form__bottom">
+						<div class="contact-form__bottom-inner">
+							<button type="submit" class="btn btn_dark contact-form__send-btn">
+								<span class="btn__bg"></span>
+								<span class="btn__inner">
+									<svg class="svg-icon" viewbox="0 0 24 24">
+										<use href='img/static/icons/icons.svg#rocket'></use>
+									</svg>
+									<span class="btn__cap">Send</span>
+								</span>
+							</button>
+							<div class="contact-form__separator">or</div>
+							<a href="<?php echo carbon_get_theme_option('crb_watsapp_call') ?>" class="btn btn_dark contact-form__call-btn" target="_blank">
+								<span class="btn__bg"></span>
+								<span class="btn__inner">
+									<svg class="svg-icon" viewbox="0 0 22 22">
+										<use href='img/static/icons/icons.svg#watsapp'></use>
+									</svg>
+									<span class="btn__cap">WhatsApp call</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="drawer drawer_overlapping drawer_modal cv-request-form" data-drawer="cv-request-form" data-scrollable>
+			<div class="drawer__panel cv-request-form__panel" data-drawer-panel>
+				<div class="drawer__inner cv-request-form__inner">
+					<div class="drawer__header cv-request-form__header">
+						<button type="button" class="close-btn drawer__close-btn" data-drawer-close="cv-request-form">
+							Close
+						</button>
+					</div>
+					<div class="drawer__body cv-request-form__body">
+						<div class="cv-request-form__title">Please fill out the form and we will send you the CV of the selected specialist and answer all your questions!</div>
+						<form id="cv-request-contact-form" class="contact-form cv-request-form__form">
+							<div class="contact-form__body">
+								<div class="form-field" data-track-child-is-filled>
+									<label for="name" class="form-field__label">Name*</label>
+									<div class="form-field__input form-input">
+										<div class="form-input__wrap">
+											<input required data-msg="Please enter your name" id="name" name="name" type="text" placeholder="Enter your name*">
+										</div>
+									</div>
+								</div>
+								<div class="form-field" data-track-child-is-filled>
+									<label for="name" class="form-field__label">Email*</label>
+									<div class="form-field__input form-input">
+										<div class="form-input__wrap">
+											<input required data-msg="Please enter an email address" data-rule-email data-msg-email="Invalid email address." id="email" name="email" type="text" placeholder="Enter your email*">
+										</div>
+									</div>
+								</div>
+								<div class="form-field" data-track-child-is-filled>
+									<label for="message" class="form-field__label">Message</label>
+									<div class="form-field__input form-input">
+										<textarea id="message" name="message" placeholder="Enter the project title / question (optional)" rows="1"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="contact-form__msg-container">
+								<div class="disclosure contact-form__msg-disclosure" data-msg-disclosure="data-not-sent">
+									<div class="disclosure__inner">
+										<div class="contact-form__msg contact-form__msg_error">
+											You have unsent information, please click “Send” button to send your information
+										</div>
+									</div>
+								</div>
+								<div class="disclosure contact-form__msg-disclosure" data-msg-disclosure="data-successfully-sent">
+									<div class="disclosure__inner">
+										<div class="contact-form__msg contact-form__msg_success">
+											Your request has been successfuly processed, our managers will contact you as soon as possible.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="contact-form__bottom">
+								<div class="contact-form__bottom-inner">
+									<button type="submit" class="btn btn_dark contact-form__send-btn">
+										<span class="btn__bg"></span>
+										<span class="btn__inner">
+											<svg class="svg-icon" viewbox="0 0 24 24">
+												<use href='img/static/icons/icons.svg#rocket'></use>
+											</svg>
+											<span class="btn__cap">Send</span>
+										</span>
+									</button>
+									<div class="contact-form__separator">or</div>
+									<a href="<?php echo carbon_get_theme_option('crb_watsapp_call') ?>" class="btn btn_dark contact-form__call-btn" target="_blank">
+										<span class="btn__bg"></span>
+										<span class="btn__inner">
+											<svg class="svg-icon" viewbox="0 0 22 22">
+												<use href='img/static/icons/icons.svg#watsapp'></use>
+											</svg>
+											<span class="btn__cap">WhatsApp call</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+	<footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+		<div class="footer__container section-container">
+			<div class="footer__body">
+				<div class="footer__body-inner">
+					<div class="footer__group">
+						<a href="https://web-you.pl/about/" class="logo footer__logo">
+							<figure>
+								<img src="img/static/logo.svg" alt="logo.svg" class="logo__img">
+								<figcaption class="logo__cap">
+									<span>WEB <strong>YOU</strong></span>
+									<span>DIGITAL AGENCY</span>
+								</figcaption>
+							</figure>
+						</a>
+						<div class="social-media footer__social-media">
+							<ul>
+								<li>
+									<a href="" class="social-media-link">
+										Facebook
+										<svg class="svg-icon" viewbox="0 0 24 24">
+											<use href='img/static/icons/icons.svg#facebook'></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="" class="social-media-link">
+										Instagram
+										<svg class="svg-icon" viewbox="0 0 24 24">
+											<use href='img/static/icons/icons.svg#instagram'></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="" class="social-media-link">
+										Linkedin
+										<svg class="svg-icon" viewbox="0 0 24 24">
+											<use href='img/static/icons/icons.svg#linkedin'></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="" class="social-media-link">
+										GitHub
+										<svg class="svg-icon" viewbox="0 0 24 24">
+											<use href='img/static/icons/icons.svg#github'></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="" class="social-media-link">
+										upwork
+										<svg class="svg-icon" viewbox="0 0 24 24">
+											<use href='img/static/icons/icons.svg#upwork'></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<nav class="footer__nav footer-nav">
+						<ul>
+							<li>
+								<a href="/#our-team" class="text-link" data-scroll-offset="-30"><strong>All specialists</strong></a>
+							</li>
+							<li>
+								<a href="/#contact-form-section" class="text-link" data-scroll-offset="-30"><strong>Contact us</strong></a>
+							</li>
+							<li>
+								<a href="" class="text-link">Privacy policy</a>
+							</li>
+							<li>
+								<a href="" class="text-link">Terms and Conditions</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__btn-area">
+						<a href="/#contact-form-section" class="btn btn_bright footer__btn" data-scroll-offset="-30">
+							<span class="btn__bg"></span>
+							<span class="btn__inner">
+								<span class="btn__cap">Contact Us</span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				Copyright ⓒ 2023 Web-you. All Rights Reserved.
+			</div>
+		</div>
+	</footer>
+	<div class="drawer drawer_overlapping drawer_right" data-drawer="main-menu">
+		<div class="drawer__panel">
+			<div class="drawer__inner" data-portal-dest="main-nav-to-aside">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
