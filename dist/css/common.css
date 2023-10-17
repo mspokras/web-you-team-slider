@@ -201,7 +201,6 @@ body {
   background: var(--color);
   opacity: 0.7;
   -webkit-transition: background-color 0.4s, left 0.4s, width 0.4s;
-  -o-transition: background-color 0.4s, left 0.4s, width 0.4s;
   transition: background-color 0.4s, left 0.4s, width 0.4s;
 }
 
@@ -246,7 +245,6 @@ body {
   color: var(--color, white);
   font-size: var(--font-size, 18px);
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 
@@ -299,7 +297,6 @@ body {
 .img-wrap_zoom-on-hover > img,
 .img-wrap_zoom-on-parent-hover > img {
   -webkit-transition: top 0.3s, left 0.3s, width 0.3s, height 0.3s;
-  -o-transition: top 0.3s, left 0.3s, width 0.3s, height 0.3s;
   transition: top 0.3s, left 0.3s, width 0.3s, height 0.3s;
 }
 
@@ -312,7 +309,6 @@ body {
   width: 100%;
   height: 100%;
   -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
 
@@ -389,7 +385,6 @@ body {
   color: #FFF;
   text-transform: uppercase;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 
@@ -468,7 +463,6 @@ body {
   width: 100%;
   height: 100%;
   -webkit-transition: fill 0.4s;
-  -o-transition: fill 0.4s;
   transition: fill 0.4s;
 }
 
@@ -542,7 +536,6 @@ body {
           flex: 0 0 auto;
   width: 24px;
   -webkit-transition: fill 0.4s, stroke 0.4s;
-  -o-transition: fill 0.4s, stroke 0.4s;
   transition: fill 0.4s, stroke 0.4s;
 }
 
@@ -555,7 +548,6 @@ body {
   background-color: #FAFF00;
   -webkit-transition: -webkit-box-shadow 0.4s;
   transition: -webkit-box-shadow 0.4s;
-  -o-transition: box-shadow 0.4s;
   transition: box-shadow 0.4s;
   transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
 }
@@ -579,7 +571,6 @@ body {
   background-color: #161616;
   -webkit-transition: -webkit-box-shadow 0.4s;
   transition: -webkit-box-shadow 0.4s;
-  -o-transition: box-shadow 0.4s;
   transition: box-shadow 0.4s;
   transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
 }
@@ -594,7 +585,6 @@ body {
   height: 100%;
   background-color: transparent;
   -webkit-transition: background-color 0.4s 0.3s;
-  -o-transition: background-color 0.4s 0.3s;
   transition: background-color 0.4s 0.3s;
 }
 
@@ -630,7 +620,6 @@ body {
   border-radius: inherit;
   background-color: #75FF00;
   -webkit-transition: width 0.4s;
-  -o-transition: width 0.4s;
   transition: width 0.4s;
 }
 
@@ -649,7 +638,6 @@ body {
   z-index: 1;
   background: #6FF100;
   -webkit-transition: width 0.4s;
-  -o-transition: width 0.4s;
   transition: width 0.4s;
 }
 
@@ -658,7 +646,6 @@ body {
   background: #65DD00;
   opacity: 0;
   -webkit-transition: width 0.4s, opacity 0.4s;
-  -o-transition: width 0.4s, opacity 0.4s;
   transition: width 0.4s, opacity 0.4s;
 }
 
@@ -683,7 +670,6 @@ body {
   border-radius: inherit;
   background-color: rgba(157, 248, 80, 0.08);
   -webkit-transition: opacity 0.4s 0.2s;
-  -o-transition: opacity 0.4s 0.2s;
   transition: opacity 0.4s 0.2s;
   opacity: 0;
 }
@@ -704,7 +690,6 @@ body {
   left: 11px;
   z-index: 1;
   -webkit-transition: opacity 0.4s 0.1s;
-  -o-transition: opacity 0.4s 0.1s;
   transition: opacity 0.4s 0.1s;
 }
 
@@ -713,7 +698,6 @@ body {
   left: 22px;
   z-index: 2;
   -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 
@@ -759,7 +743,6 @@ body {
   grid-template-rows: 0fr;
   overflow: hidden;
   -webkit-transition: grid-template-rows 0.4s;
-  -o-transition: grid-template-rows 0.4s;
   transition: grid-template-rows 0.4s;
   transition: grid-template-rows 0.4s, -ms-grid-rows 0.4s;
 }
@@ -787,7 +770,6 @@ body {
   font-weight: 700;
   letter-spacing: 0.48px;
   -webkit-transition: color 0.4s;
-  -o-transition: color 0.4s;
   transition: color 0.4s;
 }
 
@@ -804,7 +786,6 @@ body {
   fill: #161616;
   -webkit-transition: fill 0.4s, -webkit-transform 0.4s;
   transition: fill 0.4s, -webkit-transform 0.4s;
-  -o-transition: transform 0.4s, fill 0.4s;
   transition: transform 0.4s, fill 0.4s;
   transition: transform 0.4s, fill 0.4s, -webkit-transform 0.4s;
 }
@@ -836,7 +817,6 @@ body {
   min-height: var(--width);
   min-width: var(--height);
   -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
   transition: color 0.3s;
   font-size: 0;
 }
@@ -849,7 +829,6 @@ body {
   width: var(--line-width);
   height: var(--icon-height);
   -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 
@@ -862,7 +841,6 @@ body {
   background-color: #FFFFFF;
   -webkit-transition: top 0.2s, background-color 0.4s, -webkit-transform 0.4s;
   transition: top 0.2s, background-color 0.4s, -webkit-transform 0.4s;
-  -o-transition: transform 0.4s, top 0.2s, background-color 0.4s;
   transition: transform 0.4s, top 0.2s, background-color 0.4s;
   transition: transform 0.4s, top 0.2s, background-color 0.4s, -webkit-transform 0.4s;
 }
@@ -875,21 +853,17 @@ body {
   top: calc(var(--line-height) + var(--space-between));
   -webkit-transition: top 0.2s, background-color 0.1s, -webkit-transform 0.4s;
   transition: top 0.2s, background-color 0.1s, -webkit-transform 0.4s;
-  -o-transition: transform 0.4s, top 0.2s, background-color 0.1s;
   transition: transform 0.4s, top 0.2s, background-color 0.1s;
   transition: transform 0.4s, top 0.2s, background-color 0.1s, -webkit-transform 0.4s;
   -webkit-transition-delay: 0.2s, 0s;
-       -o-transition-delay: 0.2s, 0s;
           transition-delay: 0.2s, 0s;
 }
 
 .burger-btn__icon > span:last-child {
   top: calc((var(--line-height) + var(--space-between)) * 2);
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-transition-delay: 0.1s;
-       -o-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
 
@@ -939,11 +913,9 @@ body {
   z-index: 10;
   background-color: transparent;
   -webkit-transition: background-color ease-in 0.3s;
-  -o-transition: background-color ease-in 0.3s;
   transition: background-color ease-in 0.3s;
   padding: 15px 0;
   -webkit-transition: background-color 0.4s;
-  -o-transition: background-color 0.4s;
   transition: background-color 0.4s;
 }
 
@@ -1013,7 +985,6 @@ html:not(.is-mobile) body.lock .header {
   background-color: rgba(0, 0, 0, 0);
   visibility: hidden;
   -webkit-transition: background-color 0.4s, visibility 0.4s;
-  -o-transition: background-color 0.4s, visibility 0.4s;
   transition: background-color 0.4s, visibility 0.4s;
 }
 
@@ -1042,10 +1013,8 @@ html:not(.is-mobile) body.lock .header {
   width: 100%;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
-  background: -o-linear-gradient(280deg, #161616 0%, #260046 32.29%, #2A004E 57.29%, #500092 78.65%, #3A006A 100%, #2A004E 100%);
   background: linear-gradient(170deg, #161616 0%, #260046 32.29%, #2A004E 57.29%, #500092 78.65%, #3A006A 100%, #2A004E 100%);
 }
 
@@ -1164,7 +1133,6 @@ html:not(.is-mobile) body.lock .header {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(280deg, #161616 0%, #260046 32.29%, #2A004E 57.29%, #500092 78.65%, #3A006A 100%, #2A004E 100%);
   background: linear-gradient(170deg, #161616 0%, #260046 32.29%, #2A004E 57.29%, #500092 78.65%, #3A006A 100%, #2A004E 100%);
   -webkit-clip-path: polygon(0.5936px 35.6126px, 0.5936px 35.6126px, 0.23286309px 30.12755794px, 0.84287392px 24.84791832px, 2.34335183px 19.86504098px, 4.65401616px 15.27028576px, 7.69458625px 11.1550125px, 11.38478144px 7.61058104px, 15.64432107px 4.72835122px, 20.39292448px 2.59968288px, 25.55031101px 1.31593586px, 31.0362px 0.96847px, calc(100% - 48.04px) 36.4413px, calc(100% - 48.04px) 36.4413px, calc(100% - 43.89656px) 36.8396239px, calc(100% - 39.92448px) 37.7840912px, calc(100% - 36.16612px) 39.2387853px, calc(100% - 32.66384px) 41.1677896px, calc(100% - 29.46px) 43.5351875px, calc(100% - 26.59696px) 46.3050624px, calc(100% - 24.11708px) 49.4414977px, calc(100% - 22.06272px) 52.9085768px, calc(100% - 20.47624px) 56.6703831px, calc(100% - 19.4px) 60.691px, calc(100% - 0.97px) calc(100% - 35.739px), calc(100% - 0.97px) calc(100% - 35.739px), calc(100% - 0.4076px) calc(100% - 30.237462px), calc(100% - 0.834px) calc(100% - 24.909696px), calc(100% - 2.1706px) calc(100% - 19.851174px), calc(100% - 4.3388px) calc(100% - 15.157368px), calc(100% - 7.26px) calc(100% - 10.92375px), calc(100% - 10.8556px) calc(100% - 7.245792px), calc(100% - 15.047px) calc(100% - 4.218966px), calc(100% - 19.7556px) calc(100% - 1.938744px), calc(100% - 24.9028px) calc(100% - 0.500598px), calc(100% - 30.41px) calc(100% - 0px), 50.6557px calc(100% - 0px), 50.6557px calc(100% - 0px), 46.2983333px calc(100% - 0.315676px), 42.1213464px calc(100% - 1.235048px), 38.1732391px calc(100% - 2.716632px), 34.5025112px calc(100% - 4.718944px), 31.1576625px calc(100% - 7.2005px), 28.1871928px calc(100% - 10.119816px), 25.6396019px calc(100% - 13.435408px), 23.5633896px calc(100% - 17.105792px), 22.0070557px calc(100% - 21.089484px), 21.0191px calc(100% - 25.345px), 0.5936px 35.6126px);
           clip-path: polygon(0.5936px 35.6126px, 0.5936px 35.6126px, 0.23286309px 30.12755794px, 0.84287392px 24.84791832px, 2.34335183px 19.86504098px, 4.65401616px 15.27028576px, 7.69458625px 11.1550125px, 11.38478144px 7.61058104px, 15.64432107px 4.72835122px, 20.39292448px 2.59968288px, 25.55031101px 1.31593586px, 31.0362px 0.96847px, calc(100% - 48.04px) 36.4413px, calc(100% - 48.04px) 36.4413px, calc(100% - 43.89656px) 36.8396239px, calc(100% - 39.92448px) 37.7840912px, calc(100% - 36.16612px) 39.2387853px, calc(100% - 32.66384px) 41.1677896px, calc(100% - 29.46px) 43.5351875px, calc(100% - 26.59696px) 46.3050624px, calc(100% - 24.11708px) 49.4414977px, calc(100% - 22.06272px) 52.9085768px, calc(100% - 20.47624px) 56.6703831px, calc(100% - 19.4px) 60.691px, calc(100% - 0.97px) calc(100% - 35.739px), calc(100% - 0.97px) calc(100% - 35.739px), calc(100% - 0.4076px) calc(100% - 30.237462px), calc(100% - 0.834px) calc(100% - 24.909696px), calc(100% - 2.1706px) calc(100% - 19.851174px), calc(100% - 4.3388px) calc(100% - 15.157368px), calc(100% - 7.26px) calc(100% - 10.92375px), calc(100% - 10.8556px) calc(100% - 7.245792px), calc(100% - 15.047px) calc(100% - 4.218966px), calc(100% - 19.7556px) calc(100% - 1.938744px), calc(100% - 24.9028px) calc(100% - 0.500598px), calc(100% - 30.41px) calc(100% - 0px), 50.6557px calc(100% - 0px), 50.6557px calc(100% - 0px), 46.2983333px calc(100% - 0.315676px), 42.1213464px calc(100% - 1.235048px), 38.1732391px calc(100% - 2.716632px), 34.5025112px calc(100% - 4.718944px), 31.1576625px calc(100% - 7.2005px), 28.1871928px calc(100% - 10.119816px), 25.6396019px calc(100% - 13.435408px), 23.5633896px calc(100% - 17.105792px), 22.0070557px calc(100% - 21.089484px), 21.0191px calc(100% - 25.345px), 0.5936px 35.6126px);
@@ -1243,7 +1211,6 @@ html:not(.is-mobile) body.lock .header {
   top: 0;
   -webkit-transition: opacity ease-out 0.3s, visibility ease-out 0.3s, background-color 0.3s, -webkit-transform ease-out 0.3s;
   transition: opacity ease-out 0.3s, visibility ease-out 0.3s, background-color 0.3s, -webkit-transform ease-out 0.3s;
-  -o-transition: opacity ease-out 0.3s, visibility ease-out 0.3s, transform ease-out 0.3s, background-color 0.3s;
   transition: opacity ease-out 0.3s, visibility ease-out 0.3s, transform ease-out 0.3s, background-color 0.3s;
   transition: opacity ease-out 0.3s, visibility ease-out 0.3s, transform ease-out 0.3s, background-color 0.3s, -webkit-transform ease-out 0.3s;
   visibility: hidden;
@@ -1336,7 +1303,6 @@ html:not(.is-mobile) body.lock .header {
   max-width: 100%;
   -webkit-transition: left 0.3s, right 0.3s, top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
   transition: left 0.3s, right 0.3s, top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition: left 0.3s, right 0.3s, top 0.3s, transform 0.3s, opacity 0.3s;
   transition: left 0.3s, right 0.3s, top 0.3s, transform 0.3s, opacity 0.3s;
   transition: left 0.3s, right 0.3s, top 0.3s, transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
 }
@@ -1437,7 +1403,6 @@ html:not(.is-mobile) body.lock .header {
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
-  background: -o-linear-gradient(143deg, #161616 0%, #260046 18.82%, #2A004E 36.26%, #500092 56.78%, #3A006A 75.58%, #2A004E 88.57%, #2A004E 100%);
   background: linear-gradient(307deg, #161616 0%, #260046 18.82%, #2A004E 36.26%, #500092 56.78%, #3A006A 75.58%, #2A004E 88.57%, #2A004E 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1469,7 +1434,6 @@ html:not(.is-mobile) body.lock .header {
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
