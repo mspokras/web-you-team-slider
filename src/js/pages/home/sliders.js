@@ -87,12 +87,12 @@ export function initTeamatesSliders(store, events) {
         }, 300);
       },
       slideChangeTransitionStart: (swiper) => {
-        setTimeout(() => {
+        swiper.el.addEventListener("transitionend", () => {
           const slides = getSlides(swiper);
           const [activeSlideElem, activeSlideIdx] = findActiveSlide(slides);
           setSlidesOrder(slides, activeSlideElem, activeSlideIdx);
           processSlideChange(activeSlideElem);
-        }, 300);
+        });
       },
     },
   });
